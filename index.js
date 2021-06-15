@@ -1,11 +1,28 @@
-const Discord = require('discord.js')
-const client = new Discord.Client()
+const Discord = require('discord.js');
+const { Bot, Util, RichEmbed, MessageEmbed, Collection } = require('discord.js');
+let bot = new Discord.Client();
 
-client.login(process.env.TOKEN)
-
-client.on('message', message => {
+bot.on ('ready', () => {
+  console.log("Loading...");
+  setTimeout(function(){
+  console.log("Bot has been loaded completely.");
+  }, 1000);
+  // Bot Status
+  function bottatus() {
+    let status = [
+    `??Welcome to NOLEP!`
+  ];
+  let rstatus = Math.floor(Math.random() * status.length);
+  bot.user.setActivity(status[rstatus], {type: "PLAYING"});        
+}; setInterval(bottatus, 12000);
   
+ 
+});
+bot.on("message", async message => {
   
+	if(message.author.bot) return undefined;
+	if(message.channel.type === 'dm') return;
+ 
  if(message.content === 'hi') {
     message.channel.send('Hi Juga<a:sNLP_Yeayy:595130531830562856>')
 
@@ -172,16 +189,7 @@ if(message.content === 'siang') {
       
     }
 
-    
-})
+});
 
 
-client.on('ready', async() => {
-  console.log(`${client.user.tag} sudah online!`)
-  client.user.setActivity("NOLEP!")
-
-  
-})
-
-
-       
+bot.login(process.env.TOKEN);
