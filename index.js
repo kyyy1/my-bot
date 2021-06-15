@@ -13,7 +13,7 @@ bot.on ('ready', () => {
     `NOLEP!`
   ];
   let rstatus = Math.floor(Math.random() * status.length);
-  bot.user.setActivity(status[rstatus], {type: "WATCHING"});        
+  bot.user.setActivity(status[rstatus], {type: "ENTOT"});        
 }; setInterval(bottatus, 12000);
   
  
