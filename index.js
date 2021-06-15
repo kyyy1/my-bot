@@ -10,7 +10,7 @@ bot.on ('ready', () => {
   // Bot Status
   function bottatus() {
     let status = [
-    `??Welcome to NOLEP!`
+    `NOLEP!`
   ];
   let rstatus = Math.floor(Math.random() * status.length);
   bot.user.setActivity(status[rstatus], {type: "PLAYING"});        
