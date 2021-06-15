@@ -13,7 +13,7 @@ bot.on ('ready', () => {
     `NOLEP!`
   ];
   let rstatus = Math.floor(Math.random() * status.length);
-  bot.user.setActivity(status[rstatus], {type: "PLAYING"});        
+  bot.user.setActivity(status[rstatus], {type: "WATCHING"});        
 }; setInterval(bottatus, 12000);
   
  
@@ -144,15 +144,6 @@ if(message.content === 'siang') {
     
   }
   
-    if(message.content === 'Ramdhan') {
-  message.channel.send('summon kera <@305319719597113346>')
-    
-  }
-  
-  if(message.content === 'ramdhan') {
-  message.channel.send('summon kera <@305319719597113346>')
-    
-  }
   
   if(message.content === 'alin') {
   message.channel.send('<@470281222317146118> minta duit')
