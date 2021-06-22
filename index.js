@@ -154,16 +154,7 @@ if(message.content === 'siang') {
   message.channel.send('apa')
     
   }
-
-  if(message.content === 'jen') {
-  message.channel.send('mengMaong <@697548535477960765>')
     
-  }
-    
-    if(message.content === 'jasmin') {
-  message.channel.send('<@696379199765872640> kemem')
-      
-   }
     
   if(message.content === 'mwah') {
   message.channel.send('mwah<a:pNLP_Kiss:778873499619426315>')
