@@ -80,12 +80,12 @@ bot.on("message", async message => {
   }
   
   if(message.content === 'p') {
-    message.channel.send('Ha?')
+    message.channel.send('ga sopan<a:vNLP_KellyFight:721915334650626140>')
 
   }
   
     if(message.content === 'P') {
-    message.channel.send('Ha?')
+    message.channel.send('ga sopan<a:vNLP_KellyFight:721915334650626140>')
 
    }
   
