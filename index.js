@@ -174,5 +174,4 @@ if(message.content === 'siang') {
 });
 
 
-
 bot.login(process.env.TOKEN);
