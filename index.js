@@ -18,6 +18,7 @@ bot.on ('ready', () => {
   
  
 });
+
 bot.on("message", async message => {
   
 	if(message.author.bot) return undefined;
@@ -25,12 +26,12 @@ bot.on("message", async message => {
  
   
   if(message.content === 'p') {
-    message.channel.send('Ha?')
+    message.channel.send('Urusai')
 
   }
   
     if(message.content === 'P') {
-    message.channel.send('Ha?')
+    message.channel.send('Urusai')
 
   }
 	    
@@ -46,6 +47,11 @@ bot.on("message", async message => {
   
     if(message.content === 'Hm') {
   message.channel.send('<:hm:817019804874440725>')
+      
+  }
+	
+  if(message.content === 'intan') {
+  message.channel.send('<@610623317925298218> asu')
       
   }
 
