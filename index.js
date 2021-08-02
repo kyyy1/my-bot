@@ -13,7 +13,7 @@ bot.on ('ready', () => {
     `Kontol Bapakkau Pecah`
   ];
   let rstatus = Math.floor(Math.random() * status.length);
-  bot.user.setActivity(status[rstatus], {type: "PLAYING"});        
+  bot.user.setActivity(status[rstatus], {type: "PLAYINg"});        
 }; setInterval(bottatus, 12000);
   
  
